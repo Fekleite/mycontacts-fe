@@ -26,7 +26,7 @@ export const InputSearchContainer = styled.div`
     outline: 0;
 
     &::placeholder {
-      color: #bcbcbc;
+      color: ${({ theme }) => theme.colors.gray[200]};
     }
   }
 `;
