@@ -1,13 +1,15 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  margin-top: 32px;
+  width: 100%;
 `;
 
 export const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  margin-top: 32px;
 
   strong {
     color: #222;
@@ -111,6 +113,28 @@ export const Card = styled.div`
       border: none;
 
       margin-left: 8px;
+    }
+  }
+`;
+
+export const InputSearchContainer = styled.div`
+  width: 100%;
+
+  input {
+    width: 100%;
+    height: 50px;
+
+    background-color: #fff;
+
+    border: none;
+    border-radius: 25px;
+    padding: 0 16px;
+
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
+    outline: 0;
+
+    &::placeholder {
+      color: ${({ theme }) => theme.colors.gray[200]};
     }
   }
 `;
