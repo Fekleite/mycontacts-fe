@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import arrowIcon from '../../assets/images/icons/arrow.svg';
 import editIcon from '../../assets/images/icons/edit.svg';
 import trashIcon from '../../assets/images/icons/trash.svg';
@@ -16,7 +18,7 @@ export default function Home() {
       <Header>
         <strong>3 contatos</strong>
 
-        <a href="/">Novo contato</a>
+        <Link to="/new">Novo contato</Link>
       </Header>
 
       <ListContainer>
@@ -40,53 +42,9 @@ export default function Home() {
           </div>
 
           <div className="actions">
-            <a href="/">
+            <Link to="/edit/123">
               <img src={editIcon} alt="Edit" />
-            </a>
-
-            <button type="button">
-              <img src={trashIcon} alt="Delete" />
-            </button>
-          </div>
-        </Card>
-
-        <Card>
-          <div className="info">
-            <div className="contact-name">
-              <strong>Fernanda Leite</strong>
-              <small>instagram</small>
-            </div>
-
-            <span>dev.fernandaleite@gmail.com</span>
-            <span>(31) 99999-9999</span>
-          </div>
-
-          <div className="actions">
-            <a href="/">
-              <img src={editIcon} alt="Edit" />
-            </a>
-
-            <button type="button">
-              <img src={trashIcon} alt="Delete" />
-            </button>
-          </div>
-        </Card>
-
-        <Card>
-          <div className="info">
-            <div className="contact-name">
-              <strong>Fernanda Leite</strong>
-              <small>instagram</small>
-            </div>
-
-            <span>dev.fernandaleite@gmail.com</span>
-            <span>(31) 99999-9999</span>
-          </div>
-
-          <div className="actions">
-            <a href="/">
-              <img src={editIcon} alt="Edit" />
-            </a>
+            </Link>
 
             <button type="button">
               <img src={trashIcon} alt="Delete" />
